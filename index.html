@@ -1,37 +1,109 @@
 <!DOCTYPE html>
+
 <head>
-  <title>Diarmuid McGann</title>
-  <style>
-    body {
-      text-align: center;
-      background: url("http://dash.ga.co/assets/anna-bg.png");
-      background-size: cover;
-      background-position: center;
-      color: white;
-      font-family: helvetica;
-    }
-    p {
-      font-size: 22px;
-    }
-    img {
-    max-width: 300px;
-    max-height: 300px;
-    position: 0 auto;
-}
-    input {
-      border: 0;
-      padding: 10px;
-      font-size: 18px;
-    }
-    input[type="submit"] {
-      background: red;
-      color: white;
-    }
-  </style>
+  <title>About Me</title>
+  <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+  <link href="style.css" rel="stylesheet"/>
+  
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 </head>
+
 <body>
-  <img src="https://scontent-b-ams.xx.fbcdn.net/hphotos-prn2/t31.0-8/132877_10151214043539297_1844377068_o.jpg">
-  <p>Hi! I'm Anna, a NYC-based marketer. Say hello!</p>
-  <input type="email" placeholder="Your email">
-  <input type="submit">
+  <div class="nav">
+  	<img src="https://media.licdn.com/mpr/mpr/wc_200_200/p/1/000/051/2c4/28aa387.jpg">
+  	<h2>Diarmuid McGann</h2>
+  </div>
+
+  <div class="family">
+  	<img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-ash3/t31.0-8/1014697_10152239970334297_522211654_o.jpg">
+  	<h3>My Family</h3>
+  </div>
+
+  <div class="info">
+  	<div class="row">
+
+  		<div class="col-md-4">
+  				<h2>About Me</h2>
+  				<p>Im really passionate about playing sport, technology and business. I enjoy meeting people.</p>
+  		</div>
+
+  		<div class="col-md-4">
+  				<h2>Background</h2>
+  				<p>Im from Ireland. I majored in Finance and Economics, worked for 2 years in management consultancy with Accenture, worked for 1 year in Business Development with LeMond.</p>
+  		</div>
+
+  		<div class="col-md-4">
+  				<h2>Contact</h2>
+  				<ul>
+  					<li>Email: dmcgann1@gmail.com</li>
+  					<li>Cell: +353877612285</li> 
+  					<li>Skype: mcganns</li>
+  				</ul>
+  		</div>
+  	</div>
+  </div>
+
+  <div class="favplace">
+  	<h2>Favourite Places</h2>
+  	<img id="disp" src="http://goo.gl/0sX3jq">
+  </div>
+
+    <div class="carousel">
+  	<div class="row">
+
+  		<div class="col-md-3">
+  			<div class="thumbnail">
+  				<img id="Mexico" src="http://goo.gl/0sX3jq">
+  			</div>
+  		</div>
+
+  		<div class="col-md-3">
+  			<div class="thumbnail">
+  				<img id="NY" src="http://goo.gl/an2HXY">
+  			</div>
+  		</div>
+
+  		<div class="col-md-3">
+  			<div class="thumbnail">
+  				<img id="Tokyo" src="http://goo.gl/Av1pac">
+  			</div>
+  		</div>
+
+  		<div class="col-md-3">
+  			<div class="thumbnail">
+  				<img id="Paris" src="http://goo.gl/vw43v1">
+  			</div>
+  		</div>
+
+  	</div>
+  </div>
+
+  <div class="girlfriend">
+  	<img src="https://scontent-a-ams.xx.fbcdn.net/hphotos-ash3/t1.0-9/923349_10151620352779297_293035940_n.jpg">
+  	<h3>My Girlfriend</h3>
+  </div>
+
+  
+<script type="text/javascript">
+
+
+$('#Mexico').click(function() {
+	$('#disp').attr('src', 'http://goo.gl/0sX3jq');
+    });
+
+$('#NY').click(function() {
+	$('#disp').attr('src', 'http://goo.gl/an2HXY');
+    });
+
+$('#Tokyo').click(function() {
+	$('#disp').attr('src', 'http://goo.gl/Av1pac');
+    });
+
+$('#Paris').click(function() {
+	$('#disp').attr('src', 'http://goo.gl/vw43v1');
+    });
+    </script>
+    
 </body>
